@@ -1,0 +1,34 @@
+{
+  "name": "injibara-recruitment-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API for the Injibara University (INU) web-based job recruitment and applicant tracking system",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed:users": "node src/scripts/seedUsers.js",
+    "migrate": "node src/scripts/migrate.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.11"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.8.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.16",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.23.8"
+  }
+}

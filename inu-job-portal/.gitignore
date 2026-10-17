@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+server/uploads/private/*
+!server/uploads/private/.gitkeep
+client/dist/
